@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./Leonardo_Phoenix_Create_a_favicon_for_a_data_analyst_girls_por_0.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f2dae7'
+                    },
+                    fontFamily: {
+                        titulo: ['Vast Shadow', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Container geral -->
+    <div class="flex flex-col sm:flex-row justify-center items-center w-full my-10 px-4">
+
+        <!-- Imagem -->
+        <img class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full object-cover mb-6 sm:mb-0 sm:mr-6"
+            src="./Bya.jpg" alt="Foto Bya">
+
+        <!-- Informações do perfil -->
+        <div class="p-6 bg-gradient-to-r from-purple-300 to-slate-400 text-center sm:text-left rounded-lg w-full sm:w-auto">
+            <p class="text-4xl font-black text-primary font-titulo sm:text-5xl md:text-6xl">Byanca Matos</p>
+            <p class="text-3xl mb-4 sm:text-4xl md:text-5xl">Analista de dados</p>
+            
+            <!-- Redes sociais -->
+            <ul class="flex justify-center sm:justify-start gap-4 mb-4">
+                <li>
+                    <a href="https://www.linkedin.com/in/byanca-matos-29204b1bb/" target="_blank" title="LinkedIn"
+                        class="transition-transform transform hover:scale-110 hover:text-blue-500">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ByancaMatos01" target="_blank" title="GitHub"
+                        class="transition-transform transform hover:scale-110 hover:text-gray-800">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
