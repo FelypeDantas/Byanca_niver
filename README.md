@@ -1,26 +1,110 @@
-# README
+<h1 align="center">💖 Experiência Interativa - Celebração </h1>
 
-## Celebração de Aniversário - Byanca Matos
+<p align="center">
+  Um site interativo criado para celebrar sentimentos <br/>
+  Uma jornada visual com animações, efeitos e mensagens especiais.
+</p>
 
-Este projeto foi criado para celebrar os 21 anos da minha amiga **Byanca Matos**, que completa mais um ano de vida no dia **28 de novembro**. O site é uma homenagem divertida e colorida, repleta de elementos interativos e animações para tornar este dia ainda mais especial!
+<p align="center">
+  <img src="https://img.shields.io/badge/status-concluído-green"/>
+  <img src="https://img.shields.io/badge/license-MIT-blue"/>
+  <img src="https://img.shields.io/badge/javascript-ES6-yellow"/>
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/>
+</p>
 
-### Funcionalidades
+---
 
-- **Mensagem de Aniversário**: Uma saudação calorosa para comemorar os 21 aninhos da Byanca, acompanhada de um ícone de festa.
-- **Balões e Confetes**: Animações de balões flutuantes e confetes caindo para adicionar um toque festivo.
-- **Links Interativos**: Acesso a experiências de hipnose e um passeio virtual no parque.
+## 🧠 Sobre o Projeto
 
-### Tecnologias Utilizadas
+- Projeto de um site interativo com foco em experiência do usuário.
+- Desenvolvido como uma forma criativa de expressar sentimentos através da tecnologia.
+- Possui múltiplas páginas conectadas com diferentes efeitos visuais.
+- Inclui animações como:
+  - confetes 🎉
+  - balões 🎈
+  - efeitos de hipnose 🌀
+  - coração animado 💓
+- Exibe mensagens personalizadas e dinâmicas.
 
-- **HTML**: Estrutura básica do site.
-- **CSS**: Estilização e animações para criar uma interface visualmente atraente.
-- **JavaScript**: Animações dinâmicas e interações, incluindo um efeito de hipnose.
+O objetivo do projeto foi praticar conceitos importantes de desenvolvimento web, como:
 
-### Como Executar o Projeto
+- manipulação do DOM
+- animações com CSS e Canvas
+- lógica com JavaScript
+- criação de experiências interativas
+- organização de múltiplas páginas
 
-1. **Clone o repositório**: 
-   ```bash
-   git clone <URL do repositório>
+Também é um excelente exercício para quem deseja aprender:
+
+- criação de interfaces criativas  
+- uso de animações em projetos web  
+- construção de projetos com valor emocional  
+- desenvolvimento de portfólio diferenciado  
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+Este projeto foi desenvolvido com as seguintes tecnologias:
+
+- ✅ HTML5
+- ✅ CSS3
+- ✅ JavaScript (ES6)
+- ✅ Canvas API
+- ✅ Tailwind CSS
+- ✅ Vercel (deploy)
+
+---
+
+## 🌐 Acesse o Projeto
+
+Você pode visualizar o projeto online:
+
+<a href="https://felypedantas.github.io/Byanca_niver/">Clique aqui</a>
+
+---
+
+## 💡 Funcionalidades
+
+- 🎉 Tela de celebração com animações
+- 🌀 Página interativa com efeito de hipnose
+- 💓 Coração animado com Canvas
+- 💌 Mensagens personalizadas
+- 💼 Mini portfólio integrado
+- 📱 Layout responsivo
+
+---
+
+## 🎯 Objetivo
+
+Mais do que um site, este projeto foi pensado como uma experiência.
+
+Cada página representa uma parte de uma jornada, combinando tecnologia e emoção para criar algo único, leve e memorável.
+
+---
+
+## 📌 Status do Projeto
+
+✅ Finalizado  
+✨ Possíveis melhorias futuras:
+
+- Adição de trilha sonora  
+- Mais interações com o usuário  
+- Novas animações  
+- Melhorias de acessibilidade  
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+Sinta-se livre para usar, modificar e compartilhar.
+
+---
+
+## 💬 Autor
+
+Feito com 💖 por você.
 
 
 ## Autor

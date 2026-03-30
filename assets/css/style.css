@@ -1,154 +1,137 @@
-body{
-    font-family: dancing script, cursive;
+:root {
+    --bg-gradient: linear-gradient(to right, #8fa8d8, #e08bba);
+    --glass: rgba(255, 255, 255, 0.2);
+
+    --orange: #ff4500;
+    --coral: #ff6347;
+    --gold: #ff8c00;
+
+    --pink: #FF69B4;
+    --purple: #8A2BE2;
+    --green: #7FFF00;
+    --cyan: #00CED1;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
     text-align: center;
-    background: linear-gradient(to right, #8fa8d8, #e08bba);
+    background: var(--bg-gradient);
+    margin: 0;
 }
 
-.container{
-    margin: 50px auto;
+.container {
+    margin: 40px auto;
     max-width: 800px;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
+    background: var(--glass);
+    padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-    animation: zoomIn 1s;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    animation: zoomIn 0.8s ease;
 }
 
-h1{
+h1 {
     font-size: 3em;
-    margin-bottom: 20px;
     animation: fadeInDown 1s;
 }
 
-p{
-    font-size: 1.5em;
+p {
+    font-size: 1.4em;
 }
 
-.celebration{
+.celebration {
     font-size: 2em;
-    margin-bottom: 20px;
     animation: fadeInUp 1s;
 }
 
-.balloons{
-    margin-top: 20px;
-    position: relative;
+.celebration-icon {
+    font-size: 4em;
+    color: #FFD700;
+    animation: spin 2s linear infinite;
 }
 
-.balloon{
+/* 🎈 Balões */
+.balloons {
+    margin-top: 20px;
+}
+
+.balloon {
     display: inline-block;
     width: 50px;
     height: 70px;
-    background-color: #ff4500;
     border-radius: 50% 50% 25% 25%;
-    position: relative;
+    margin: 0 10px;
     animation: float 3s ease-in-out infinite;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.balloon::after{
+.balloon::after {
     content: '';
-    display: block;
     width: 2px;
     height: 50px;
-    background-color: #000;
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
+    background: black;
+    display: block;
+    margin: auto;
 }
 
-.confetti{
+.orange { background: var(--orange); }
+.coral { background: var(--coral); }
+.gold { background: var(--gold); }
+
+/* 🎊 Confetes */
+.confetti {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #FFD700;
-    top: 0;
+    background: gold;
     left: 50%;
     opacity: 0;
     animation: fall 3s infinite;
 }
 
-.container > a{
-    list-style-type: none;
-    font-weight: 600;
-    font-size: 28px;
-    color: green;
+.confetti:nth-child(2) { left: 40%; animation-delay: .2s; background: var(--pink); }
+.confetti:nth-child(3) { left: 60%; animation-delay: .4s; background: var(--purple); }
+.confetti:nth-child(4) { left: 70%; animation-delay: .6s; background: var(--green); }
+.confetti:nth-child(5) { left: 30%; animation-delay: .8s; background: var(--cyan); }
+
+/* 🔗 Links */
+.links a {
+    display: block;
+    margin: 15px 0;
+    font-size: 22px;
+    color: #0a7a0a;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
+.links a:hover {
+    color: #044d04;
+    transform: scale(1.05);
+}
+
+/* ✨ Animações */
 @keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+    50% { transform: translateY(-20px); }
 }
 
 @keyframes fall {
-    0% {
-        transform: translateY(-200px);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(800px);
-        opacity: 0;
-    }
+    0% { transform: translateY(-200px); opacity: 1; }
+    100% { transform: translateY(800px); opacity: 0; }
 }
 
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; }
 }
 
 @keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; }
 }
 
 @keyframes zoomIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+    from { opacity: 0; transform: scale(.5); }
+    to { opacity: 1; }
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.celebration-icon{
-    font-size: 4em;
-    color: #FFD700;
-    animation: spin 2s infinite linear;
-    margin-bottom: 20px;
+    to { transform: rotate(360deg); }
 }

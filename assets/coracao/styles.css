@@ -1,4 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle, #1a1a1a, #000);
+    color: white;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
 p {
-    font-size: 24px;
-    width: 70%;
+    font-size: 20px;
+    line-height: 1.6;
 }

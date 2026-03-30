@@ -1,18 +1,21 @@
 function atualizarIdade() {
-    const dataNascimento = new Date("11/28/2003");  // Defina sua data de nascimento aqui
+    const dataNascimento = new Date(2003, 10, 28); // mês começa do 0 (10 = novembro)
     const hoje = new Date();
+
     let idade = hoje.getFullYear() - dataNascimento.getFullYear();
 
-    // Verificar se o aniversário já passou neste ano
     const mesAtual = hoje.getMonth();
     const diaAtual = hoje.getDate();
-    if (mesAtual < dataNascimento.getMonth() || (mesAtual === dataNascimento.getMonth() && diaAtual < dataNascimento.getDate())) {
-        idade++;
+
+    const aindaNaoFezAniversario =
+        mesAtual < dataNascimento.getMonth() ||
+        (mesAtual === dataNascimento.getMonth() && diaAtual < dataNascimento.getDate());
+
+    if (aindaNaoFezAniversario) {
+        idade--; // 👈 aqui está a correção
     }
 
-    // Atualizar o texto da idade
-    document.getElementById("idade").textContent = `${idade} aninhos!`;
+    document.querySelector(".celebration").textContent = `${idade} aninhos! 🎂`;
 }
 
-// Atualiza a idade ao carregar a página
-window.onload = atualizarIdade;
+window.addEventListener("load", atualizarIdade);
